@@ -33,5 +33,6 @@ function processData(Test_String) {
     console.log(!!Test_String.match(regexPattern));
 } 
 
+processData('12345678'); //true
 processData('12-34-56-78'); //true
 processData('12-34-56-78-88'); //false

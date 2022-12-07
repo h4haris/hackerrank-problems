@@ -8,7 +8,6 @@
 
 //* Task
 
-
 // You have a test string 'S'.
 // Write a regex that will match 'S' using the following conditions:
 
