@@ -41,37 +41,18 @@
 // In the given 2 lines, we find familiarize and familiarise once each. So, the total count is 2.
 
 
-
-var regexPattern = /^\d+\s(C|CPP|JAVA|PYTHON|PERL|PHP|RUBY|CSHARP|HASKELL|CLOJURE|BASH|SCALA|ERLANG|CLISP|LUA|BRAINFUCK|JAVASCRIPT|GO|D|OCAML|R|PASCAL|SBCL|DART|GROOVY|OBJECTIVEC)$/g
-
-// function processData(input) {
-//     inputLines = input.split('\n')
-//     var inputLength = +inputLines[0]
-
-//     for (var i = 1; i <= inputLength; i++) {
-//         var isValid = inputLines[i].match(regexPattern)
-//         console.log(isValid ? "VALID" : "INVALID")
-//     }
-// }
-
 function processData(input) {
-    //Enter your code here
-    let split = input.split(/\n?\d+\n/);
-
-    // console.log(split);
+    let split = input.split(/\n?\d+\n/); // splitting with digits
     split.shift();
-    let sentences = split[0].split(/\n/);
-    // console.log(sentences)
-    let paragraphs = sentences.join(' ');
-    // console.log(paragraphs)
+    let paragraphs = split[0].split(/\n/).join(' '); // combining all sentences
+
     let testCases = split[1].split('\n');
-        testCases.forEach((item, index) =>{
-            let regex = "("+item+ "|"+item.substring(item.length-2,0)+'se'+")";
-            regex = new RegExp(regex, 'g');
-            let matches = paragraphs.match(regex);
-            console.log(matches != null ? matches.length : 0);
+    testCases.forEach((item, index) =>{
+        let regex = "(" + item + "|" + item.substring(0,item.length-2) + 'se' + ")";
+        regex = new RegExp(regex, 'g');
+        let matches = paragraphs.match(regex);
+        console.log(matches != null ? matches.length : 0);
     });
-    
 }
 
 
@@ -82,4 +63,20 @@ to familiarize oneself with ui of hackerrank is easy
 familiarize`)
 /*
 2
+ */
+
+console.log('\n');
+
+processData(`3
+crucial cold jam successful millimetre impression catalyze catalyse long rule
+polish broad paralyze conclude lonely exhibit sir paralyze pound distinguish
+male border noisily paralyze index crop caramelise truly accurately bound
+3
+caramelize
+catalyze
+paralyze`)
+/*
+1
+2
+3
  */
