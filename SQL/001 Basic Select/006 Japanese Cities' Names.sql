@@ -1,4 +1,4 @@
--- Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+-- Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN.
 
 -- The CITY table is described as follows:
 
@@ -12,11 +12,11 @@
 
 
 select name from CITY
-where Population > 120000
-and countrycode = 'USA'
+where countrycode = 'JPN'
 
 
--- Scottsdale
--- Corona
--- Concord
--- Cedar Rapids
+-- Neyagawa 
+-- Ageo 
+-- Sayama 
+-- Omuta 
+-- Tokuyama 
