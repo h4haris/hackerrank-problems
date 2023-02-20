@@ -51,3 +51,31 @@
 
 
 
+Select
+CASE
+    WHEN P IS NOT NULL THEN
+		CASE
+          	WHEN N IN (Select distinct P from BST) THEN CONCAT(N, ' Inner')
+        	ELSE CONCAT(N, ' Leaf')
+        END
+    ELSE CONCAT(N, ' Root')
+END
+FROM BST
+ORDER BY N
+
+
+-- 1 Leaf 
+-- 2 Inner 
+-- 3 Leaf 
+-- 4 Inner 
+-- 5 Leaf 
+-- 6 Inner 
+-- 7 Leaf 
+-- 8 Leaf 
+-- 9 Inner 
+-- 10 Leaf 
+-- 11 Inner 
+-- 12 Leaf 
+-- 13 Inner 
+-- 14 Leaf 
+-- 15 Root
