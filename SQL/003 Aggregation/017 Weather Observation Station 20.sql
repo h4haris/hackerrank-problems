@@ -1,5 +1,4 @@
--- Query the greatest value of the Northern Latitudes (LAT_N) from STATION that is less than 137.2345. Truncate your answer to 4 decimal places.
-
+--* A median is defined as a number separating the higher half of a data set from the lower half. Query the median of the Northern Latitudes (LAT_N) from STATION and round your answer to 4 decimal places.
 
 
 --? Input Format
@@ -23,8 +22,11 @@
 
 
 
-Select Cast(Round(LAT_N,4) as numeric(10,4)) from Station
-where LAT_N = (select Max(LAT_N) from Station where LAT_N < 137.2345)
+SELECT top 1 
+CAST(
+    PERCENTILE_DISC(0.5) WITHIN GROUP (ORDER BY LAT_N) OVER() AS numeric(10,4)
+) 
+FROM STATION
 
 
--- 137.0193
+-- 83.8913

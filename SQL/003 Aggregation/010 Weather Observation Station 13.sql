@@ -22,7 +22,7 @@
 
 
 
-Select  cast(round(Sum(LAT_N),4,1) as numeric(36,4))  from Station
+Select Cast(Round(Sum(LAT_N),4) as numeric(10,4)) from Station
 where LAT_N > 38.7880 and LAT_N < 137.2345
 
 

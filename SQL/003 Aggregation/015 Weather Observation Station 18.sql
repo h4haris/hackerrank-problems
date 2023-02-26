@@ -7,7 +7,7 @@
 
 -- Query the Manhattan Distance between points P1 and P2 and round it to a scale of 4 decimal places.
 
-
+--! Manhattan Distance formula = |a - c| + |b - d|
 
 --? Input Format
 
@@ -32,9 +32,9 @@
 
 Select 
 Cast(
-    ABS(Round(Min(LAT_N)  - Max(LAT_N), 4)) +
-    ABS(Round(Min(LONG_W) - Max(LONG_W), 4)) 
-    as numeric(36,4)
+    ABS(Min(LAT_N)  - Max(LAT_N)) +
+    ABS(Min(LONG_W) - Max(LONG_W)) 
+    as numeric(10,4)
 )
 from Station
 

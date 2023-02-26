@@ -34,7 +34,7 @@
 
 
 
-Select Cast(Round(Sum(LAT_N),2) as numeric(36,2)), Cast(Round(Sum(LONG_W),2) as numeric(36,2)) from Station
+Select Cast(Sum(LAT_N) as numeric(10,2)), Cast(Sum(LONG_W) as numeric(10,2)) from Station
 
 
 -- 42850.04 47381.48

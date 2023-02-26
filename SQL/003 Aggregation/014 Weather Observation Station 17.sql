@@ -23,7 +23,7 @@
 
 
 
-Select Cast(Round(LONG_W,4) as numeric(36,4)) from Station
+Select Cast(LONG_W as numeric(10,4)) from Station
 where LAT_N = (select Min(LAT_N) from Station where LAT_N > 38.7780)
 
 
