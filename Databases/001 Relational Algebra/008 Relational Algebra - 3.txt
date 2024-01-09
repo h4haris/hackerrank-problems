@@ -1,0 +1,8 @@
+Which is a join condition contains an equality operator?
+
+Equijoins
+Cartesian
+Natural
+Left
+
+Ans: Equijoins

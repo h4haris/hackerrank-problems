@@ -1,0 +1,8 @@
+Using which language can a user request information from a database ?
+ 
+Query
+Relational
+Structural
+Compiler
+
+Ans: Query
