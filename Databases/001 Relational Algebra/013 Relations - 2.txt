@@ -1,0 +1,8 @@
+The result which operation contains all pairs of tuples from the two relations, regardless of whether their attribute values match.
+
+Join
+Cartesian product
+Intersection
+Set difference
+
+Ans: Cartesian product

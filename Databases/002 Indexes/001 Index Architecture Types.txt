@@ -1,0 +1,8 @@
+How many index architecture type classifications are there in MS SQL Server?
+
+1
+2
+3
+4
+
+Ans: 2
