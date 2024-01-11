@@ -1,0 +1,8 @@
+What is the source of the cube metadata for OLAP?
+
+Star Schema
+Snowflake Schema
+Standard Database
+Both star and snowflake schema(s)
+
+Ans: Both star and snowflake schema(s)

@@ -1,0 +1,8 @@
+This OLAP operation involves computing all of the data relationships for one or more dimensions.
+
+dice
+slice
+pivot
+roll-up
+
+Ans: roll-up
