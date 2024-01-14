@@ -1,0 +1,12 @@
+We execute the following query (in Relational Calculus) on a set of integers S.
+For the given set S, what will be the answer? Fill up the answer box with the required integer.
+
+{x|A y S(x) ^ S(y) -> y <= x}
+
+S = {4,5,6,7,10,11,19,18,3}
+
+Ans: 19
+
+Explanation: Find an element in set X, such that for all elements in Set(X) and Set(Y), there is a function where y is less than or equal to x.
+
+Therefore, the greatest element in the given set S will be the element x needed as an answer since no other element can be greater than that.

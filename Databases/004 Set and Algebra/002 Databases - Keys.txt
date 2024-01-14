@@ -1,0 +1,13 @@
+A database table with three fields (bookname, author, language) has been created. If the table is as provided below, which of these three fields may be used as the primary key?
+
+bookname-author-language
+A Tale of Two Cities, Charles Dickens, English
+Oliver Twist, Charles Dickens, English
+Godaan, Premchand, Hindi
+Chandrakanta, Devaki Nandan Khatri, Hindi
+Hamlet, William Shakespeare, English
+The Merchant of Venice, William Shakespeare, English
+
+Ans: bookname
+
+Explanation: only bookname will be unique and can be used as primary key
