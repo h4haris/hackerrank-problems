@@ -1,0 +1,17 @@
+Consider the following relation and determinants.
+
+R(a, b,c,d)
+
+                   a,c -> b,d
+                   a,d -> b
+        Also, a,b is a primary key for the above relation.
+
+The above relation is in x NF form where x may take the following values {1,2,3,3.5} corresponding to {1NF, 2NF, 3NF and BCNF} respectively.
+
+What is the maximum possible value of x such that the above relation satisfies the *x*NF form?
+
+Your answer should only be restricted to one of these numbers:1/2/3/3.5
+
+Ans: 3
+
+Explanation: This relation will be in 1NF,2NF and in 3NF but not in BCNF because one condition for bcnf is going to false here which is determinant side in functional dependency should be a superkey but in this case superkey is only "ac" . "ad "is not a superkey in this relation so this relation is not in boyce code normal form .

@@ -1,0 +1,5 @@
+A particular database is normalized to satisfy a particular level of normalization (either 1NF or 2NF or 3NF). One of the tables contains, among other fields, a column for the City and a column for the Zip Code. Assuming that there is a many-to-one mapping between the set of Zip Code(s) and City, we may conclude that the database is definitely NOT in NF form. What is the integer x (1, 2, or 3)? Fill your answer in the text box below.
+
+Ans: 3
+
+Explanation: Based on the given information, if there is a many-to-one mapping between the set of Zip Code(s) and City in a table, then the database is not in the third normal form (3NF). The presence of transitive dependencies, as indicated by the many-to-one mapping, violates the rules of 3NF.
