@@ -49,7 +49,7 @@
 //* Sample Output 0
 ////?   YES
 
-//* Explanation
+//* Explanation 0
 
 // The two kangaroos jump through the following sequence of locations:
 
@@ -67,10 +67,10 @@
 //* Sample Input 1
 ////?   0 2 5 3
 
-//* Sample Output 0
+//* Sample Output 1
 ////?   NO
 
-//* Explanation
+//* Explanation 1
 
 // The second kangaroo has a starting location that is ahead (further to the right) of the first kangaroo's starting 
 // location (i.e., x2 > x1). Because the second kangaroo moves at a faster rate (meaning v2 > v1) and is already 
@@ -160,3 +160,17 @@ class Solution
 
 //! Output 1
 // NO
+
+
+//! Input 2
+// 43 2 70 2
+
+//! Output 2
+// NO
+
+
+//! Input 3
+// 4523 8092 9419 8076
+
+//! Output 3
+// YES
