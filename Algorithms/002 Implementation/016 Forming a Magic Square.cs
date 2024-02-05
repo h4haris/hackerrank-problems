@@ -8,6 +8,9 @@
 //! Note: The resulting magic square must contain distinct integers in the inclusive range [1,9].
 
 
+// https://en.wikipedia.org/wiki/Magic_square
+
+
 //* Example
 
 // $s = [[5, 3, 4], [1, 5, 8], [6, 4, 2]]
